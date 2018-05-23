@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.khanhkhoatrangmail.xedieukhienwifi.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:text="Tốc độ:"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:textColor="#080808"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/coi"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/tocdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="toc do"
+        android:text="700"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:textColor="#080808"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginStart="23dp" />
+
+    <EditText
+        android:id="@+id/trangthai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="xe dung"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:textColor="#080808"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/tocdo"
+        android:layout_alignBottom="@+id/tocdo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp" />
+
+    <Button
+        android:id="@+id/chedo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/auto"
+        android:layout_below="@+id/tocdo"
+        android:layout_alignStart="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="dieu khien tay"
+        android:layout_alignBaseline="@+id/chedo"
+        android:layout_alignBottom="@+id/chedo"
+        android:layout_alignStart="@+id/tocdo" />
+
+    <Button
+        android:id="@+id/thang"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/up"
+        android:layout_below="@+id/chedo"
+        android:layout_alignStart="@+id/chedo"
+        android:layout_marginStart="40dp" />
+
+    <Button
+        android:id="@+id/lui"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/down"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/thang" />
+
+    <Button
+        android:id="@+id/trai"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/left"
+        android:layout_alignBaseline="@+id/lui"
+        android:layout_alignBottom="@+id/lui"
+        android:layout_toEndOf="@+id/editText"
+        android:layout_marginStart="37dp" />
+
+    <Button
+        android:id="@+id/phai"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/right"
+        android:layout_alignBaseline="@+id/lui"
+        android:layout_alignBottom="@+id/lui"
+        android:layout_alignStart="@+id/trangthai" />
+
+    <Button
+        android:id="@+id/tang"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/increase"
+        android:layout_below="@+id/trangthai"
+        android:layout_toEndOf="@+id/coi" />
+
+    <Button
+        android:id="@+id/giam"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/decrease"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/phai" />
+
+    <Button
+        android:id="@+id/coi"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/buzzer"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/giam"
+        android:layout_marginEnd="40dp" />
+
+    <Button
+        android:id="@+id/dung"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/stop"
+        android:layout_marginTop="19dp"
+        android:layout_alignTop="@+id/giam"
+        android:layout_toStartOf="@+id/coi" />
+
+</RelativeLayout>
